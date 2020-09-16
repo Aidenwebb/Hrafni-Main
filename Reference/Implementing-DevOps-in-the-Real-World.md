@@ -439,7 +439,76 @@ Tips for Getting Started
   * Define tech standards that reduce transition time for engineers.
 
 ## Week of DevOps - Fridays
-###
+
+### Holding Team Standups
+  * What is it? Org / Team Standup
+  * Who is involved? Team Members, Interested Parties
+  * Why it belongs in DevOps? Transparency, throughput, delivery focus
+
+### Packaging Code for Release
+  * What is it? Package code for release
+  * Who is involved? CI Process, On-Call Engineer
+  * Why it belongs in DevOps? Fast flow
+
+Packaing must be Repeatable, Comprehensive
+  * Package is the result of a suiccessful CI pipeline. It's important that the CI pipeline is green as often as possible, so code is kept in a production ready state
+  * Multiple ways to package an application. Could just need the code and a manifest. Could be containers, raw code, could be embedded in an image.
+  * Packages should include ALL pieces needed to deploy. Including infrastructure, firewalls, loading, schema, vm's, smoke tests, 3rd party agents etc
+  * Ensure that packages can be recreated
+
+Tips for Getting Started
+  * Document current process to find non-automation steps
+  * Consider investing in a package repository. Acts as a bridge between build system and release system. Can keep previous versions of the artifact and have a historical record
+  * Only use containers as output of CI, not input. Containers should be the result of a build process so Dev's don't need to get involved in the building of the container, they just list dependancies and the build pipeline does the rest.
+
+
+### Deploying Application Updates to Production
+  * What is it? Deploy app update to production
+  * Who is involved? Deployment pipeline, on-call engineer
+  * Why it belongs in DevOps? Last part of the delivery pipeline! Get product to the customer!
+
+Ship Often for Better Outcomes
+  * Should be so heavily practiced that it becomes boring. The longer you wait before deployment, the more error-prone and scary it becomes.
+  * Multiple techniques available to minimise downtime. Could do Green/Blue environments. Live env serves business traffic, deploy to standby, test and then switch environments. Or Canary releases, phasing across a subset of users. Could also use feature toggles to allow for planned exposure of your customers to new features and to turn off features that show critical bugs.
+  * Have telemetry in place to measure impact (positive or negative) of release. Not just health of the operational components but also business metrics
+
+Tips for Getting Started
+  * Try automated deployments with individual services before moving to entire systems
+  * Blue / Green deployment may be the easiest way to start. A great way to have alternate environments to point back to when one breaks.
+  * Closely watch system AND business metrics after deployment
+
+### Attending a Team Lunch
+  * What is it? Attend Team Lunch
+  * Who is involved? Everyone!
+  * Why it belongs in DevOps? Team-building, Sense of Unity, Trust
+
+Trust is a Foundation of DevOps
+  * Build relationships within and across teams. Focused on long lived support, you need to build trust within teams. Not everyone needs to be friends, but you need to have mutual respect
+  * These connections are important in a crisis or during retrospective. Who's good at forensics, who's good at communicating? The team can be the best judge of who's going to be best to handle certain parts of a process or system
+  * Meetups should be planned by team, and executives. Not only can teams self-organise, but executive involvement shows there's an investment being made in team wellbeing
+
+Tips for Getting Started
+  * Buy lunch once a week for the teams. Set aside some budget.
+  * For meetings, use video conferencing. 
+  * Don't force group socialisation, but also encourage 1:1 opportunities. Everyone has their own life too.
+
+### Cross-training Other Teams
+  * What is it? Cross-train teams
+  * Who is involved? Anyone in the organisation
+  * Why it belongs in DevOps? Continual learning, transparency
+
+Share Local Learnings more Broadly
+  * Show and tell to train and educate. Allow teams a forum to demonstrate what they're building. For both technical details and also showing off the value of the features.
+  * Particularly useful for front-line support engineers. The worst thing is learning about a new feature when a customer contacts them to tell them that it isn't working. Useful for other stakeholders.
+  * Spark ideas within other teams. Avoid duplication. Don't Repeat Yourself
+  * Share results of experiments with new technology
+  
+Tips for Getting Started
+  * Ask teams to demo after they ship
+  * Invite a broad audience outside application teams. Allow anyone to sit in if they want. Sales, HR etc may all be interested in what has been put together.
+  * Record for playback and archive so those who are unable to or don't attend are still able to access the videos
+
+### Module and Course Summary
   * What is it?
   * Who is involved?
   * Why it belongs in DevOps?
