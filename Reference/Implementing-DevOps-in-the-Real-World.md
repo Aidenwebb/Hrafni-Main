@@ -103,16 +103,105 @@ Added the following to YouTrack backlog.
 ## Week of DevOps - Mondays
 
 ### Holding Organisation and Team Standups
+Inform people about milestones/blockers etc.
+  * What is it? Org / Team Standup
+  * Who is involved? Team members, interested parties
+  * Why does this belong in DevOps? Transparency, throughput, delivery focus
+
+Why a Daily Standup Matters:
+  * Orient everyone
+  * Draw attention to important information. Request for pairs, important issues, important customers to support etc
+  * Come together to remove blockers. Figure out what the block is and get help rather than moving on to the next item
+  * Facilitate continuous improvement
+
+Tips for getting started
+  * Set up a shared calendar with milestones
+  * Keep brief, avoid status updates. Have someone keep track of time. Aim for 3-5 minutes total
+  * Don't force everyone to speak
+  * Set an example that asking for help is ok
+
 
 ### Assigning an On-Call Engineer
+Someone needs to be responsible for end-user support throughout the week
+  * What is it? Assign on-call engineer.
+  * Who is involved? Rotating person on the application team
+  * Why does it belong in DevOps? Develops empathy, focus on the customer
+
+On-Call Engineer leads to better code and focus
+  * Puts the focus on the customer and the service
+  * Encourages code instrumentation, improvement. You end up building better logging, metrics and error reporting as you have to live with the architectural and coding decisions made.
+  * Helps other team members stay focused. Stops context switching between dev and support
+  * Record of experiences help the team
+
+Tips for getting started
+  * Sign up for a pager service. For a clear notification when things go wrong
+  * Make it easy to find who is on-call for each team
+  * Do dry-run exercises to flex and test the process. Encourage improvements, understand escalations, deployments etc
+  * Add an "executive on-call" to the rotation. Helps Executives remove blockers, prioritise and empathise with both customers and teams
+
 
 ### Planning the Next Software Sprint
+  * What is it? Plan the next sprint
+  * Who is involved? Whole application team including the product owner
+  * Why does it belong in DevOps? Focus on small batches, delivery pipeline
+
+Key Part of DevOps is the Spring Approach
+  * Product owner maintains a backlog and decides what work is in the sprint
+  * Start meeting with a retrospective. Rewind and figure out how the last sprint went. Address issues and continually improve
+  * Team decides amount of work in the sprint. Team will typically understand how much work they're capable of and their velocity and scope.
+  * Sprint scope doesn't change. It's one way only. No scope creep, no new stories, typically no emergencies that cause everyone to drop work. Reduce sprint length. 1,2 or 4 weeks.
+  * Team always ships at the end of a sprint. Keeps a sense of urgency and forces to wrap things up.
+  * Sprint window should keep shrinking. It's about small batches and shrinking helps to highlight inefficiencies. 2 weeks testing might work in a 6 month sprint, but in a 3 week sprint, 2 weeks of testing is clearly ridiculous.
+
+Tips for getting started
+  * Designate a product owner. Not shared, dedicated and responsible solely for that product and is a facilitator with stakeholder. Product owner prioritises and understands the life of the products
+  * Begin with one month sprints. Too long and it's easy to let stuff slide. Too short and you'll find it hard to get anything done.
+  * Don't use planning session to design software. More requriement sessions and planning sessions before the sprint planning sessions. Sprint planning should be about ingesting the work and deciding on level of effort for each item in the sprint
+  * If adding work from the sprint, subtract work from the sprint. Teams have a finite capacity, and adding new work without adding new resource erodes trust, increases stress and results in work not being completed.
+  * Change process regularly to improve. Figure out new ways to measure velocity, understand item work etc.
 
 ### Triaging New Feature Requests
+  * What is it? Triage new feature requests. Review requests and bugs raised by the customer
+  * Who is involved? Product owner, stakeholders. 
+  * Why does it belong in DevOps? Continual improvement, customer focus.
+
+Do Realistic reviews of New Requests
+  * Review all software requests regularly. Feedback to customers. Reject or Accept requests
+  * Cross functional participation. Gain perspectives from multiple different teams. Things that are not important to one group, may be critical to another. A seemingly non important bug may be flagged by the support team as very important to the customer
+  * Immediately adjust backlog priorities
+
+Tips for Getting Started
+  * Triage features AND bugs in this meeting. One methodology is bug fixes happen either in the current sprint, the next sprint, or are dropped until they reappear to avoid an enormous backlog of issues and bugs overburdening the team. It's important to make time for bugs in the sprint else they can become invisible and untracked work.
+  * Support team and on-call engineers attend. Other teams can also attend. Voice of stakeholders is important
+  * Reject the majority of requests. Not because they're not great ideas, but because there is a finite capacity and backlogging too many requests reduces the velocity at which an exceptional idea can make it to production.
+  * Product owner retires old backlog items. One methodology is to keep under 100 items in the backlog at any one time. Backlog should be things that you can complete within the next 6 months.
 
 ### Merging Code with the Master Branch
+  * What is it? Merge code with the master branch
+  * Who is involved? All engineers
+  * Why does it belong in DevOps? Small batches, limiting work in progress, keeping code production quality at all times
+
+Continuous Integration Drives Confidence
+Extended, multi-month integration periods can be exhausing, especially due to a lack of testing, and trying to glue code together
+  * Test coverage is key to trusting automation. 
+  * Fast feedback reduces wasted time later on. The purpose of automated testing is not to reduce the cost of testing, but to allow tests to be run on a more frequent basis to provide feedback to developers to reduce waste in new work.
+  * Frequent tests mean a smaller debugging surface. Smaller releases mean less work to review to hunt down a bug.
+  * Aim for green builds, but don't fear red. Red means your tests are working. If red, everyone should feel confident in what they need to do, check and review to get a green build
+
+Tips for Getting Started
+  * Source control repository is a must have. 
+  * Get visual indicators of build status. Lamps or similar. Red lamps being broken build, Green being successful build. Pipelines on monitors etc.
+  * Avoid long-lived feature branches. Consensus is typically that branches are a contributor to waste. The longer a branch is worked on, the harder it is to integrate back in to main when complete.
+  * Make working code a forcing function
+  
+
+
 
 ## Week of DevOps - Tuesdays
+
+  * What is it? 
+  * Who is involved?
+  * Why does it belong in DevOps?
 
 ## Week of DevOps - Wednesdays
 
