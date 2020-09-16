@@ -290,41 +290,153 @@ Tips for Getting Started
 
 ## Week of DevOps - Wednesdays
 
-### Holding Team Standups, and Onboarding New Engineers
-  * What is it?
-  * Who is involved?
-  * Why it belongs in DevOps?
+### Holding Team Standups
+  * What is it? Org / Team Standup
+  * Who is involved? Team Members, Interested Parties
+  * Why it belongs in DevOps? Transparency, throughput, delivery focus
+
+### Onboarding New Engineers
+  * What is it? Onboard New Engineer. Could be a constant rotation within the team
+  * Who is involved? Application team
+  * Why it belongs in DevOps? Cross-training, customer focus
+
+It's About Speed to Productivity
+The faster a new employee is able to be productive, the faster a company sees value and the faster the new employee feels satisfied with their new role
+  * Learn from source control, deployment, pipeline, wiki. Avoid having undocumented tribal knowledge within the team as this is a barrier to understanding and a barrier to productivity
+  * Good opportunity to test deployment pipeline. See how a new participant works with the tools
+  * Pairing accelerates readiness. New hires should pair with someone experienced and can contribute quickly.
 
 Tips for Getting Started
+  * New team members pair with existing ones. Not at random, consider who on the team are good coaches. Let them know ahead of time so they can plan their time
+  * Encourage use of application itself
+  * Add to the On-Call rotation quickly. Preferably within 6 weeks. A good crashcourse in to understanding the application.
+  * Iterate onboarding docs based on feedback. Were there common or repeat questions that could be useful to add? Perhaps ask the new member to update documentation themselves as they have fresh eyes
 
 ### Attending a Monthly Operations Review
-  * What is it?
-  * Who is involved?
-  * Why it belongs in DevOps?
+  * What is it? Attend monthly operations review
+  * Who is involved? Application Team Leaders, Executives
+  * Why it belongs in DevOps? Customer focus, continuous improvement
 
+Accountability Breeds Focus
+  * Remain focused on customer metrics. User adoption trends, account closures, abandoned carts etc
+  * Leverage collective knowledge. Team is getting together to learn from eachother. Avoid local optimisations screwing up global concerns
+  * Improves situational awareness for executives. Give an active view of the data so they can check in at any time without disrupting work.
+  * Not a problem solving session. This is to communicate status, not solve problems
+  
 Tips for Getting Started
+  * Ensure each app team defines success
+  * Schedule a monthly review
+  * Lead by example and mention challenges. Don't just show green and hide problems
+  * Actively follow up on problem areas
+
 
 ### Conducting an Incident Retrospective / Postmortem
-  * What is it?
-  * Who is involved?
-  * Why it belongs in DevOps?
+  * What is it? Conduct incicent retrospective / postmortem
+  * Who is involved? On-Call Engineer, Stakeholders
+  * Why it belongs in DevOps? Continuous Improvement, Transparency. Improve the service, you're not trying to find someone to blame
+
+Culture is Revealed During Retrospectives
+  * Not about assigning blame. Look for ways to redesign the system to prevent future accidents. 
+  * Assemble a timeline of things that happened and when.
+  * Use facts to review what happened. Avoid revisionist history (Oh we'd just done this we'd be fine). Focus on what happened and when and aim for constructive teamwork addressing faults in process
+  * Explain what worked, what didn't. Brainstorm at the start of the session.
+  * Develop action plan and assign owners. Don't just gather, throw around some ideas and leave, it's a waste of time. Instead, everything that didn't work well should be on an action plan at the end. Could be adding high availability, improving documentation or other such actions.
+  * Put record into a discoverable place, as publically as possible. Show what happened, this is what happened, and this is what we're doing to fix this.
 
 Tips for Getting Started
+  * Set up a retrospective the day after the next incident
+  * Choose an interface for collecting feedback where people can list what worked, what didn't, and creating action plans
+  * Define crisp action items. Prevent errors from reoccurring. Create countermeasures and guard rails
+  * Assign someone to keep and share minutes of the meeting
+
 
 ### Collaborating Across Teams
-  * What is it?
-  * Who is involved?
-  * Why it belongs in DevOps?
+  * What is it? Collaborate Across Teams
+  * Who is involved? Application Team Leads, Engineers
+  * Why it belongs in DevOps? Remove bottlenecks, Improve Flow. Find things that are preventing the customer seeing the value you're developing and remove them
+
+Collaboration In, and Across, Teams
+  * No team should be entirely independent
+  * Think locally, act globally. Purely local optimisation will impact and potentially damage the organisation as a whole. 
+  * Create system for quick collaboration and decision making. Whiteboards, informal ways to solve the problem and keep going. 
 
 Tips for Getting Started
+  * Invest in chat room technology
+  * Set up loose boundaries and guidance for commonalities
+  * Foster cross-team communication through hackathons
 
 ## Week of DevOps - Thursdays
-###
-  * What is it?
-  * Who is involved?
-  * Why it belongs in DevOps?
+
+### Holding Team Standups
+  * What is it? Org / Team Standup
+  * Who is involved? Team Members, Interested Parties
+  * Why it belongs in DevOps? Transparency, throughput, delivery focus
+
+### Replacing a Team Process
+  * What is it? Replace team process following Retrospective
+  * Who is involved? Team Leaders, Team Members
+  * Why it belongs in DevOps? Continuous Improvement
+
+DevOps Is About Improving Flow
+  * Hard to improve what you're not measuring. You can't say "This should be faster" if you don't know what "normal" looks like.
+  * Act on broken processes, bottlenecks and links. Start with a bottleneck and fix it. The strength of a chain is dependent on its weakest leak.
+  * Automation is often, but not always, the answer. Sometimes it's about training or communication.
+  * Experiment and measure. Small batches and continuous improvement are important so you're able to try new things. 
 
 Tips for Getting Started
+  * Solicit feedback from the entire team. 
+  * Listen to calls to stop at "good enough". You might never get to perfect, but over-optimisation at an area that is not the bottleneck is a waste.
+  * Only buy products / services with APIs. This will allow you to develop middleware, integrations and automations.
+  * Evangelise to other teams
+
+### Creating Product Documentation
+  * What is it? Write knowledge base articles, release notes
+  * Who is involved? Application Team, Documentation Team, Others in Company
+  * Why it belongs in DevOps? Knowledge sharing, throughput. People can't use things they don't know about. Help people stay well informed.
+
+Faster Delivery Means More Frequent Explainations
+  * As velocity increases, harder for users to track changes.
+  * Content must be easy to create, edit and find. Most places don't have a document writing team. Most companies will need to collaboratively build documentation.
+  * Change log and broadcast engine are important. Version control is important in documentation management too! 
+
+Tips for Getting Started
+  * Set up an open content system
+  * Still have "owners" but many contributors
+  * Define a light review process - pull requests work well!
+  * Open up to those outside the team
+
+### Upgrading the Deployment Pipeline
+  * What is it? Upgrade deployment pipeline
+  * Who is involved? Application team
+  * Why it belongs in DevOps? Increased automation
+
+Deployment Pipelines grow into a System of Record
+  * Build a better audit trail over time. It's easy to audit the whole thing rather than a number of samples. Everything from patching code, to updating servers, to deployment history is in the pipeline history
+  * First CI / CD attempt may be lightweight
+  * Partner with groups like InfoSec and Compliance
+  * Cross functional skills come in handy
+
+Tips for Getting Started
+  * Do value stream mapping with cross-functional team
+  * Test changes repeatedly in non-production environments
+  * Use or create API's to integrate with existing audit-visible systems
+  * 
+### Right-sizing the Team Roster
+  * What is it? Right-size team rosters
+  * Who is involved? Executives and Team Leaders
+  * Why it belongs in DevOps? Responsiveness. React and change according to business needs.
+
+Fluid Teams support Adaptable Strategies
+  * Application teams aren't of fixed size. Funding a project and an operational team is a different mindset to funding a product team
+  * Engineer count may swell during key periods, and contract after. This needs to be structured and planned, else adding people can slow down velocity.
+  * Rotate operations, security expertise throughout. This allows key expertise and input from multiple teams and helps build trust
+  * Offers maximum flexibility to respond to changing business needs. It's an engine for delivery services and value to end users and customers. It drives innovation and you need to be responsive and adaptive to the needs of the business.
+
+Tips for Getting Started
+  * Create culture of rotating opportunities. This needs to feel natural and positive, not a punishment
+  * Use data to make decisions. Consider veloicity per engineer per team, introduce members in a structured manor
+  * Avoid over-adjusting. Don't do this every week. Do it at most quarterly
+  * Define tech standards that reduce transition time for engineers.
 
 ## Week of DevOps - Fridays
 ###
