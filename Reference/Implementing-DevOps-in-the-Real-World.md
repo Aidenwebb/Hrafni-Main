@@ -193,18 +193,143 @@ Tips for Getting Started
   * Get visual indicators of build status. Lamps or similar. Red lamps being broken build, Green being successful build. Pipelines on monitors etc.
   * Avoid long-lived feature branches. Consensus is typically that branches are a contributor to waste. The longer a branch is worked on, the harder it is to integrate back in to main when complete.
   * Make working code a forcing function
-  
+
 
 
 
 ## Week of DevOps - Tuesdays
 
-  * What is it? 
-  * Who is involved?
-  * Why does it belong in DevOps?
+### Holding Team Standups Handling Support Tickets
+  * What is it? Org / Team Standup
+  * Who is involved? Stakeholders, Team members, interested parties
+  * Why does it belong in DevOps? Transparency, throughput, delivery focus
+
+### Handling Support Tickets
+  * What is it? Handle support tickets. End users raise issues about functionality, performance and defects. May be handled by a frontline support team, but routes to the team that owns the service.
+  * Who is involved? On-Call engineers, front-line support
+  * Why does it belong in DevOps? Responsiveness and accountability
+
+Team closest to code handles tickets
+  * Primary responsibility of on-call engineer that week
+  * Using same ticketing system as support personnel. Avoid transfer waste
+  * May become a group effort to resolve.
+  * Sparks new ideas for new features to propose
+
+Tips for Getting Started
+  * Consolidate unique ticketing systems. Having separate ticketing systems means loss of information and transfer waste. It also means that whne it's resolved, you need to remember to close the ticket across multiple systems.
+  * Don't assign on-call engineer additional work
+  * Have test-bed ready to reproduce issues
+  * Avoid handing over tickets to the next On-Call
+  * Maintain good ticket hygiene
+
+
+### Patching Infrastructure
+  * What is it? Patch server clusters
+  * Who is involved? Engineers on the application team, sometimes the On-Call Engineer
+  * Why does it belong in DevOps? Consistency, Responsiveness, Security
+
+Make Patching Routine, Uneventful
+  * Upgrades required up and down stack
+  * Infrastructure as Code. Treat infrastructure as another configuration, create it through automation without human interaction
+  * Multiple possible approaches. Could patch with Config Management software. Could create new images/containers and replace existing ones. (Immutable Server)
+  * Consistently applied to each environment
+
+Tips for Getting Started
+  * Do integration testing with infrastructure
+  * Define a policy to never log in to servers. Avoid touching production servers manually
+  * Introduce config management everywhere first
+  * Aim for immutable infrastructure over time
+
+### Pairing on Infrastructure-Centric Feature
+  * What is it? Pair on Infrastructure Feature
+  * Who is involved? Engineers on the application team
+  * Why does it belong in DevOps? Cross Training, collaboration. Builds a better relationship between Infrastructure and Developer teams
+
+Infrastructure is Code Too!
+  * Hire generalists with specialities
+  * All configuration details are in source control
+  * Test rigorously in production-like environment
+
+Tips for Getting Started
+  * Make infrastructure work visible. Put stories on the backlog for requirements, automations etc.
+  * Pair Ops engineers with software engineers. Build comradery and break down barries
+  * Test infrastructure just like software
+
+### Detecting and Handling a Service Interruption
+  * What is it? Detect service interruption
+  * Who is involved? Support staff, on-call engineer, potentially the whole team
+  * Why does it belong in DevOps? Responsiveness, accountability
+
+Disciplined Approach to Problem Solving
+  * Upfront instrumentation pays off. Collect metrics and act on patterns
+  * Use facts to figure out causation. Mean time to recovery is faster when you have good telemetery 
+  * Communication is key. Collect a timeline of events, communicate that things are down. It's not fun, but it's much worse when customers are surprised by an outage and can't find information
+  * Over-alerting causes fatigue. Alert only on actionable, high urgency items.
+
+Tips for Getting Started
+  * Identify core metrics that measure availability
+  * Add tech for inside-out and outside-in tests. Add instrumentation to detect incidents that were previously user reported and not detected by tests
+  * Make dashboards visible, proactive
+  * Have a unified way to communicate status. This could be a chat channel internally, or a public status site. Don't have different stakeholders randomly calling team members.
+
+### Sending Status Updates to Executive Stakeholders
+  * What is it? Send status update to executives. Prove that things are working
+  * Who is involved? Team Leaders
+  * Why does it belong in DevOps? Transparency and Trust
+
+Communicate and Iterate
+  * DevOps is a cultural change, and requires transparency
+  * Share core *business* metrics. Show how this is delivering value. Also show priorities, risks and technical information
+  * Build momentum through demonstrated progress. This could be politically sensitive, could be upending a project management team or office who no longer get to deliver big releases.
+
+Tips for Getting Started
+  * Choose handful of core metrics to share. Focus on business statistics, release highlights, revenue, adoption statistics etc.
+  * Maintain regular rhythm. Send it out at the same time each week/month. Actively push the information out, if it's ignored, that's their choice
+  * Show good AND bad news to build trust. Don't just show green dashboards all day every day even if things are wrong. 
+  * Keep refining based on feedback. Ask stakeholders what matters to them. Update metrics, format and audience
 
 ## Week of DevOps - Wednesdays
 
+### Holding Team Standups, and Onboarding New Engineers
+  * What is it?
+  * Who is involved?
+  * Why it belongs in DevOps?
+
+Tips for Getting Started
+
+### Attending a Monthly Operations Review
+  * What is it?
+  * Who is involved?
+  * Why it belongs in DevOps?
+
+Tips for Getting Started
+
+### Conducting an Incident Retrospective / Postmortem
+  * What is it?
+  * Who is involved?
+  * Why it belongs in DevOps?
+
+Tips for Getting Started
+
+### Collaborating Across Teams
+  * What is it?
+  * Who is involved?
+  * Why it belongs in DevOps?
+
+Tips for Getting Started
+
 ## Week of DevOps - Thursdays
+###
+  * What is it?
+  * Who is involved?
+  * Why it belongs in DevOps?
+
+Tips for Getting Started
 
 ## Week of DevOps - Fridays
+###
+  * What is it?
+  * Who is involved?
+  * Why it belongs in DevOps?
+
+Tips for Getting Started
