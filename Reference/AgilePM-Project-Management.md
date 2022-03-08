@@ -65,6 +65,45 @@ How to choose:
 
 ## Agile Project Management - The Basics
 
+### The Basics
+  * The philosophy overarches the way we do things
+  * Supported and underpinned by 8 principals
+  * Lifecycle supports principals. Key factors that need to be in place
+  * Roles and responsibilities
+  * Products produced, when they're created and how they evolve through subsequent phases
+  * Techniques such as MoSCoW prioritisation, iterative development, time boxing and modelling
+
+
+### What is Negotiable?
+
+### AgilePM - Philosophy
+
+### The Principles
+
+#### Principle 1
+Focus on Business Need
+
+#### Principle 2
+Deliver on Time
+
+#### Principle 3
+Collaborate
+
+#### Principle 4
+Never compromise quality
+
+#### Principle 5
+Build incrementally from firm foundations
+
+#### Principle 6
+Develop iteratively
+
+#### Principle 7
+Communicate continuously and clearly
+
+#### Principle 8
+Demonstrate control
+
 ## Roles and Responsibilites
 
 ## Preparing for Agile Project Management
